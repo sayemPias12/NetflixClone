@@ -1,0 +1,312 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("/netfilx/projects/assests/image/Bg.jpg");
+  height: 70vh;
+  position: relative;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+}
+.box {
+  height: 80vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+}
+nav {
+  max-width: 55vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 1;
+}
+.text {
+  height: calc(100% - 80px);
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  gap: 20px;
+  padding: 0 30px;
+}
+.text > :first-child {
+  font-size: 64px;
+  font-weight: 900;
+  text-align: center;
+}
+.text > :nth-child(2) {
+  font-size: 64px;
+  font-weight: 900;
+  text-align: center;
+}
+.text > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.text > :nth-child(4) {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.line {
+  height: 6px;
+  background-color: gray;
+  position: relative;
+  z-index: 100;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.reds {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 15px;
+}
+.redi {
+  background-color: red;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+}
+.main input {
+  padding: 13px 200px 13px 9px;
+  border-color: rgba(255, 255, 255);
+  font-size: 15px;
+  color: white; /* Text color */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.heroBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(23, 23, 23, 0.7);
+}
+input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 01);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+ 
+
+}
+.secFirstText {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  height: 50vh;
+  flex-wrap: wrap;
+  padding: 34px 0px;
+ 
+}
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+.secImg {
+  position: relative;
+}
+.secImg video {
+  position: absolute;
+
+  top: 51px;
+  right: 0px;
+  width: 26vw;
+}
+.secFirstText > :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+  /* padding-bottom: 5px; */
+}
+.Mbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  max-width: 70vw;
+  margin: auto;
+  height: 80vh;
+  padding: 0px;
+}
+.sbox {
+  transition: all 2s ease-in-out;
+  background-color: #383636;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  padding-left: 8px;
+  margin: 5px auto; /* Combine margin and center alignment */
+  color: white;
+  padding: 0px 8px; /* Adjust padding for consistency */
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.sbox:hover {
+  background-color: rgb(111, 105, 105);
+}
+
+
+.sbox svg {
+  fill: white !important;
+  stroke: white !important;
+}
+
+.Mbox :nth-child(1) {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 15px;
+}
+footer{
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  padding: 34px;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+footer .questions {
+  padding: 34px 0;
+}
+.footer a{
+font-size: 14px;
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+ .first{
+  flex-wrap: wrap;
+  overflow: hidden;
+ }
+ /* .text{
+  flex-wrap: wrap;
+  overflow: hidden;
+
+ } */
+ .btn{
+  flex-direction: column;
+ }
+
+ .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+nav{
+  max-width: 90vw;
+}
+.secImg img {
+  width: 305px;
+ 
+}
+
+.secImg video {
+ 
+  width: 305px;
+}
+.text > :first-child {
+  font-size: 32px;
+  
+}
+.text > :nth-child(2) {
+  font-size: 32px;
+  
+}
+.text > :nth-child(3) {
+  font-size: 10px;
+ 
+}
+.text > :nth-child(4) {
+  font-size: 8px;
+ 
+}
+.heroBtn{
+  background-color: transparent;
+}
+.redi {
+
+  padding: 10px 8px;
+ 
+  
+  font-size: 15px;
+}
+.main input {
+  padding: 13px 90px 13px 9px;
+  
+  font-size: 15px;
+  
+}
+.secFirstText > :nth-child(1) {
+  font-size: 30px;
+  font-weight: 900;
+  /* padding-bottom: 5px; */
+}
+
+/* .Mbox :nth-child(1) {
+  font-size: 30px;
+  
+} */
+.sbox {
+
+  font-size: 22px;
+}
+}
